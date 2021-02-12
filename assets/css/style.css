@@ -40,7 +40,7 @@ p {
 }
 
 
-img {
+#headshot {
     display: block;
     border: 5px solid salmon;
     border-radius: 50%;
@@ -53,21 +53,48 @@ section {
     background-image: linear-gradient(to right, grey, salmon);
 }
 
-div {
+.workSection {
     display: flex;
     width: 1000px;
-    height: 500px;
+    height: 700px;
     padding: 10px;
     border: 5px solid gray;
     margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.contactlist {
+.contactList {
     display: flex;
     justify-content: space-evenly;
 }
 
+.workPics {
+    border:indigo 2px solid;
+    max-width: 100%;
+}
 
+.coffeeShop {
+    border: black 2px solid;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.workSpace {
+    border: black 2px solid;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.bike {
+    border: black 2px solid;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#AboutMe {
+    border: purple 2px solid;
+}
 
 
 
