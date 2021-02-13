@@ -1,27 +1,35 @@
 * {
     box-sizing: border-box;
 }
+
 header {
-    background-image:url(simple_background.jpg);
+    background-image: linear-gradient(to left, grey, salmon);
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
+    border: black 2px solid;
+    margin-bottom: 25px;
 }
 
 h1 {
     font-size: 300%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font: grey;
+    color:whitesmoke;
+    font-family:serif;
     margin-left: 50px;
     display: flex;
-    background-color: salmon;
     padding: 15px;
+}
+
+h2 {
+    padding: 10px;
+    color: whitesmoke;
 }
 
 nav {
     display: flex;
     align-items: center;
-    margin: 0 10px 0 auto;
+    margin: 0 50px 0 auto;
+    font-size: 150%;
 }
 
 nav ul {
@@ -30,19 +38,21 @@ nav ul {
 }
 
 nav ul li {
-    margin: 5px; 
+    margin: 20px; 
 }
 
 p {
     text-align: left;
-    margin-left: 450px;
-    margin-right: 225px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 25px;
+    font-size: 110%;
+    color: whitesmoke;
 }
-
 
 #headshot {
     display: block;
-    border: 5px solid salmon;
+    border: 5px solid grey;
     border-radius: 50%;
     margin: auto;
     margin-top: 25px;
@@ -51,52 +61,73 @@ p {
 
 section {
     background-image: linear-gradient(to right, grey, salmon);
-}
-
-.workSection {
-    display: flex;
-    width: 1000px;
-    height: 700px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin: auto;
-    align-items: center;
-    flex-wrap: wrap;
+    border: black 2px solid;
+    margin-bottom: 25px;
 }
 
 .contactList {
+    list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-}
-
-.workPics {
-    border:indigo 2px solid;
-    max-width: 100%;
+    font-size: 125%;
+    color: whitesmoke;
 }
 
 .coffeeShop {
     border: black 2px solid;
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 25%;
+    max-height: 25%;
 }
 
 .workSpace {
     border: black 2px solid;
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 25%;
+    max-height: 25%;
 }
 
-.bike {
+.Horiseon {
     border: black 2px solid;
     max-width: 50%;
-    max-height: 50%;
+    max-height: 40%;
 }
 
 #AboutMe {
-    border: purple 2px solid;
+    border: black 2px solid;
+    margin-bottom: 25px;
+    background-image: linear-gradient(salmon, grey);
+}
+
+#Work {
+    border: black 2px solid;
+    margin-bottom: 25px;
+    background-image: linear-gradient(grey, salmon);
+}
+
+#Contact {
+    border: black 2px solid;
+    margin-bottom: 25px;
+    background-image: linear-gradient(salmon, grey);
 }
 
 
+.workPics {
+    display: flex;
+    border: black 2px solid;
+    max-width: 25%;
+    max-height: 25%;
+}
 
-
+.workSection {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: auto;
+    margin-bottom: 25px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
