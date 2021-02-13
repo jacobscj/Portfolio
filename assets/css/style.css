@@ -2,15 +2,16 @@
     box-sizing: border-box;
 }
 
+/* styling the header with color, borders, and margins*/
 header {
     background-image: linear-gradient(to left, grey, salmon);
     display: flex;
     background-repeat: no-repeat;
-    background-size: cover;
     border: black 2px solid;
     margin-bottom: 25px;
 }
 
+/* styling my name */
 h1 {
     font-size: 300%;
     color:whitesmoke;
@@ -23,6 +24,8 @@ h1 {
 h2 {
     padding: 10px;
     color: whitesmoke;
+    font-size: 200%;
+    text-align: center;
 }
 
 nav {
@@ -32,6 +35,7 @@ nav {
     font-size: 150%;
 }
 
+/* flexing nav bar to the right */
 nav ul {
     display: flex;
     list-style: none;
@@ -50,6 +54,7 @@ p {
     color: whitesmoke;
 }
 
+/* giving my headshot some styling*/
 #headshot {
     display: block;
     border: 5px solid grey;
@@ -59,12 +64,14 @@ p {
     margin-bottom: 25px;
 }
 
+/* adding color to the background of my image */
 section {
     background-image: linear-gradient(to right, grey, salmon);
     border: black 2px solid;
     margin-bottom: 25px;
 }
 
+/* styling the contact section */
 .contactList {
     list-style-type: none;
     display: flex;
@@ -73,24 +80,7 @@ section {
     color: whitesmoke;
 }
 
-.coffeeShop {
-    border: black 2px solid;
-    max-width: 25%;
-    max-height: 25%;
-}
-
-.workSpace {
-    border: black 2px solid;
-    max-width: 25%;
-    max-height: 25%;
-}
-
-.Horiseon {
-    border: black 2px solid;
-    max-width: 50%;
-    max-height: 40%;
-}
-
+/* styling each section */
 #AboutMe {
     border: black 2px solid;
     margin-bottom: 25px;
@@ -109,14 +99,7 @@ section {
     background-image: linear-gradient(salmon, grey);
 }
 
-
-.workPics {
-    display: flex;
-    border: black 2px solid;
-    max-width: 25%;
-    max-height: 25%;
-}
-
+/* styling and positioning items within work box */
 .workSection {
     display: flex;
     width: 800px;
@@ -131,3 +114,68 @@ section {
     flex-wrap: wrap;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.card h3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: grey;
+    border: black 1px solid;
+}
+    
+.card img {
+    height: 100%;
+    width: 100%;
+}
+
+.cardLarger {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 330px;
+    height: 225px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardLarger img {
+    height: 100%;
+    width: 100%;
+}
+
+.cardLarger h3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: grey;
+    border: black 1px solid;
+}
+
+/* adjusting image layout so it stacks when screen size is smaller */
+@media screen and (max-width: 768px) {
+    .workSection {
+        display: flex;
+        display: grid;
+        width: 800px;
+        height: 500px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: auto;
+        margin-bottom: 25px;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    
