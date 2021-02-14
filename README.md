@@ -6,7 +6,7 @@ Homework assignment 2 was to create a portfolio page from scratch. Using semanti
 
 ## Screenshot
 
-![image](![connor_jacobs_portfolio_screenshot](https://user-images.githubusercontent.com/77179391/107892332-66287300-6ef2-11eb-925c-c85611a96c2e.jpeg))
+![image](https://user-images.githubusercontent.com/77179391/107892693-e059f700-6ef4-11eb-9b81-58d7fb148948.png)
 
 ## The Webpage
 
