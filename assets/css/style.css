@@ -108,7 +108,6 @@ section {
     border: 5px solid gray;
     margin: auto;
     margin-bottom: 25px;
-    justify-content: center;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -165,17 +164,43 @@ section {
 @media screen and (max-width: 768px) {
     .workSection {
         display: flex;
-        display: grid;
-        width: 800px;
-        height: 500px;
+        display: block;
         padding: 10px;
         border: 5px solid gray;
         margin: auto;
         margin-bottom: 25px;
-        justify-content: center;
         justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
     }
 
+@media screen and (max-width: 540px) {
+    /* stacking links in nav bar */
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    /* adjusting image size */
+    .card {
+        height: 50%;
+        width: 50%;
+    }
+
+    .card img {
+        height: 50%;
+        width: 50%;
+    }
+
+    /* stacking contact info */
+    .contactList {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        line-height: 1.5;
+    }
+
+}
     
+@media screen and (max-width: 400px) {
+
+}
