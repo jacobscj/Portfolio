@@ -27,15 +27,10 @@ h1 {
 
 h2 {
     padding: 5px;
-    margin: 35px 750px 20px 750px;
     color: whitesmoke;
     font-size: 250%;
     text-align: center;
     text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
-    display: flex;
-    justify-content: center;
-    border: whitesmoke 2px dotted;
-    border-radius: 20px;
 }
 
 nav {
