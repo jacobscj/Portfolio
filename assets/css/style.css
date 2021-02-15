@@ -7,29 +7,35 @@ header {
     background-image: linear-gradient(to left, grey, salmon);
     display: flex;
     background-repeat: no-repeat;
-    border: black 2px solid;
     border-radius: 20px;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 /* styling my name */
 h1 {
     font-size: 350%;
     color: whitesmoke;
+    border: whitesmoke 2px dotted;
+    border-radius: 20px;
     font-family:serif;
     margin-left: 50px;
     display: flex;
     padding: 15px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 }
 
 h2 {
     padding: 5px;
-    margin: 35px auto 20px auto;
+    margin: 35px 750px 20px 750px;
     color: whitesmoke;
     font-size: 250%;
     text-align: center;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+    display: flex;
+    justify-content: center;
+    border: whitesmoke 2px dotted;
+    border-radius: 20px;
 }
 
 nav {
@@ -60,7 +66,7 @@ p {
 /* giving my headshot some styling*/
 #headshot {
     display: block;
-    border: 4px solid black;
+    border: 2px dotted whitesmoke;
     border-radius: 50%;
     margin: auto;
     margin-top: 25px;
@@ -70,7 +76,7 @@ p {
 /* adding color to the background of my image */
 section {
     background-image: linear-gradient(to right, grey, salmon);
-    border: black 2px solid;
+    border: white 2px solid;
     border-radius: 20px;
     margin-bottom: 25px;
 }
@@ -86,21 +92,21 @@ section {
 
 /* styling each section */
 #AboutMe {
-    border: black 2px solid;
+    border: white 2px solid;
     margin-bottom: 25px;
     background-image: linear-gradient(salmon, grey);
     border-radius: 20px;
 }
 
-.work {
-    border: black 2px solid;
+#work {
+    border: white 2px solid;
     margin-bottom: 25px;
     background-image: linear-gradient(grey, salmon);
     border-radius: 20px;
 }
 
 #Contact {
-    border: black 2px solid;
+    border: white 2px solid;
     margin-bottom: 25px;
     background-image: linear-gradient(salmon, grey);
     border-radius: 20px;
@@ -112,7 +118,7 @@ section {
     width: 800px;
     height: 500px;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px dotted whitesmoke;
     border-radius: 20px;
     margin: auto;
     margin-bottom: 25px;
@@ -124,7 +130,7 @@ section {
 .card {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px whitesmoke dotted;
     border-radius: 20px;
     width: 300px;
     height: 200px;
@@ -149,7 +155,7 @@ section {
 .cardLarger {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px dotted whitesmoke;
     border-radius: 20px;
     width: 330px;
     height: 225px;
