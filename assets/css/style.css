@@ -36,6 +36,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+    margin: 20px;
 }
 
 nav ul li {
@@ -79,7 +80,7 @@ section {
 
 p {
     text-align: left;
-    margin: 0px 400px;
+    margin: 0px 250px;
     padding: 0px 10px 10px 10px;
     font-size: 120%;
     color: whitesmoke;
@@ -97,8 +98,8 @@ p {
 /* styling and positioning items within work box */
 .workSection {
     display: flex;
-    width: 800px;
-    height: 500px;
+    width: 1200px;
+    height: 300px;
     padding: 10px;
     border: 2px dotted whitesmoke;
     border-radius: 20px;
@@ -106,13 +107,14 @@ p {
     margin-bottom: 25px;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    overflow: auto;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     border: 2px whitesmoke dotted;
+    margin: auto 5px;
     border-radius: 20px;
     width: 300px;
     height: 200px;
@@ -145,6 +147,7 @@ p {
     position: relative;
     overflow: hidden;
     opacity: 0.5;
+    margin: auto 5px;
 }
 
 .cardLarger img {
@@ -186,7 +189,7 @@ p {
     color: whitesmoke;
 }
 
-/* adjusting image layout so it stacks when screen size is smaller */
+/* activating some responsive design */
 @media screen and (max-width: 768px) {
     
     .workSection {
@@ -200,35 +203,28 @@ p {
         justify-content: space-between;
     }
 
-@media screen and (max-width: 540px) {
-    /* stacking links in nav bar */
-    nav ul {
-        display: flex;
-        flex-direction: column; 
-        text-align: center;
+    p {
+        text-align: left;
+        margin: 0px 100px;
+        padding: 0px 10px 10px 10px;
+        font-size: 120%;
+        color: whitesmoke;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    /* adjusting image size */
-    .card {
-        height: 50%;
-        width: 50%;
+    header {
+        background-image: linear-gradient(salmon, grey);
+        display: block;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin: 25px 25px;
     }
 
-    .card img {
-        height: 50%;
-        width: 50%;
-    }
-
-    /* stacking contact info */
     .contactList {
-        display: flex;
-        flex-direction: column; 
-        text-align: center;
-        line-height: 1.5;
+        list-style-type: none;
+        display: block;
+        justify-content: center;
+        font-size: 125%;
+        color: whitesmoke;
     }
-
-}
-    
-@media screen and (max-width: 400px) {
-
 }
