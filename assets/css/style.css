@@ -4,12 +4,11 @@
 
 /* styling the header with color, borders, and margins*/
 header {
-    background-image: linear-gradient(to left, grey, salmon);
+    background-image: linear-gradient(salmon, grey);
     display: flex;
     background-repeat: no-repeat;
     border-radius: 20px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin: 25px 25px;
 }
 
 /* styling my name */
@@ -18,7 +17,7 @@ h1 {
     color: whitesmoke;
     border: whitesmoke 2px dotted;
     border-radius: 20px;
-    font-family:serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 50px;
     display: flex;
     padding: 15px;
@@ -28,6 +27,7 @@ h1 {
 h2 {
     padding: 5px;
     color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 250%;
     text-align: center;
     text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
@@ -38,6 +38,7 @@ nav {
     align-items: center;
     margin: 0 50px 0 auto;
     font-size: 150%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* flexing nav bar to the right */
@@ -56,6 +57,7 @@ p {
     padding: 0px 10px 10px 10px;
     font-size: 120%;
     color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* giving my headshot some styling*/
@@ -70,10 +72,10 @@ p {
 
 /* adding color to the background of my image */
 section {
-    background-image: linear-gradient(to right, grey, salmon);
+    background-image: linear-gradient(grey, salmon);
     border: white 2px solid;
     border-radius: 20px;
-    margin-bottom: 25px;
+    margin: 25px 25px;
 }
 
 /* styling the contact section */
@@ -88,21 +90,22 @@ section {
 /* styling each section */
 #AboutMe {
     border: white 2px solid;
-    margin-bottom: 25px;
     background-image: linear-gradient(salmon, grey);
     border-radius: 20px;
+    margin: 25px 25px;
 }
 
 #work {
     border: white 2px solid;
-    margin-bottom: 25px;
+    margin: 25px 25px;
     background-image: linear-gradient(grey, salmon);
     border-radius: 20px;
+
 }
 
 #Contact {
     border: white 2px solid;
-    margin-bottom: 25px;
+    margin: 25px 25px;
     background-image: linear-gradient(salmon, grey);
     border-radius: 20px;
 }
@@ -171,6 +174,14 @@ section {
     transform: translateX(-50%);
     background-color: grey;
     border: black 1px solid;
+}
+
+.card:hover {
+    opacity: 0.5;
+}
+
+.cardLarger:hover {
+    opacity: 0.5;
 }
 
 /* adjusting image layout so it stacks when screen size is smaller */
